@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Tool Integration') {
       steps {
-        tool(name: 'MVN', type: 'build tool')
+        tool(name: 'maven', type: 'MVN')
         tool(name: 'JDK', type: 'java ')
       }
     }
